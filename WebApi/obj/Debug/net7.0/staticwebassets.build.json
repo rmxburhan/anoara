@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aVbUoz45syBmzJI8cPmCadeUY0hTLmFCPejITI8sT04=",
+  "Hash": "oaK+TsTlos5nvM8A2BgMp5zdLEfd3ytHr4WMZBxaE2o=",
   "Source": "WebApi",
   "BasePath": "_content/WebApi",
   "Mode": "Default",
@@ -8,19 +8,70 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "WebApi/wwwroot",
+      "Name": "WebApi\\wwwroot",
       "Source": "WebApi",
-      "ContentRoot": "/home/rmxburhan/Development/TO/WebApi/wwwroot/",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
       "BasePath": "_content/WebApi",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/home/rmxburhan/Development/TO/WebApi/wwwroot/classresources/89036237-e37d-452b-85ba-526411566081.png",
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\classresources\\0ff0bcfe-2928-4f94-af65-a74f4c5888da.png",
       "SourceId": "WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/rmxburhan/Development/TO/WebApi/wwwroot/",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "classresources/0ff0bcfe-2928-4f94-af65-a74f4c5888da.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\classresources\\0ff0bcfe-2928-4f94-af65-a74f4c5888da.png"
+    },
+    {
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\classresources\\1dd0e838-63e7-448e-91b0-0c86932a6560.png",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "classresources/1dd0e838-63e7-448e-91b0-0c86932a6560.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\classresources\\1dd0e838-63e7-448e-91b0-0c86932a6560.png"
+    },
+    {
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\classresources\\735b92f2-b24e-453a-a76f-2afd46467cf7.png",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "classresources/735b92f2-b24e-453a-a76f-2afd46467cf7.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\classresources\\735b92f2-b24e-453a-a76f-2afd46467cf7.png"
+    },
+    {
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\classresources\\89036237-e37d-452b-85ba-526411566081.png",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
       "BasePath": "_content/WebApi",
       "RelativePath": "classresources/89036237-e37d-452b-85ba-526411566081.png",
       "AssetKind": "All",
@@ -31,13 +82,30 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/classresources/89036237-e37d-452b-85ba-526411566081.png"
+      "OriginalItemSpec": "wwwroot\\classresources\\89036237-e37d-452b-85ba-526411566081.png"
     },
     {
-      "Identity": "/home/rmxburhan/Development/TO/WebApi/wwwroot/classresources/e349c118-051f-4635-862d-377cacaf097f.pdf",
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\classresources\\b9feb53f-3b78-4131-91b3-ffe830e297e5.jpg",
       "SourceId": "WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/rmxburhan/Development/TO/WebApi/wwwroot/",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "classresources/b9feb53f-3b78-4131-91b3-ffe830e297e5.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\classresources\\b9feb53f-3b78-4131-91b3-ffe830e297e5.jpg"
+    },
+    {
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\classresources\\e349c118-051f-4635-862d-377cacaf097f.pdf",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
       "BasePath": "_content/WebApi",
       "RelativePath": "classresources/e349c118-051f-4635-862d-377cacaf097f.pdf",
       "AssetKind": "All",
@@ -48,13 +116,115 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/classresources/e349c118-051f-4635-862d-377cacaf097f.pdf"
+      "OriginalItemSpec": "wwwroot\\classresources\\e349c118-051f-4635-862d-377cacaf097f.pdf"
     },
     {
-      "Identity": "/home/rmxburhan/Development/TO/WebApi/wwwroot/images/post/ab592217-c299-4fe1-9bc8-8d514caef245c15d876519737754bfbe6fa92cb32e33.jpg",
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\milestone\\527a37d5-abe8-4ee8-a471-c119c18d393bchannels4_profileas.png",
       "SourceId": "WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/rmxburhan/Development/TO/WebApi/wwwroot/",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "images/milestone/527a37d5-abe8-4ee8-a471-c119c18d393bchannels4_profileas.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\milestone\\527a37d5-abe8-4ee8-a471-c119c18d393bchannels4_profileas.png"
+    },
+    {
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\milestone\\ab21acb5-f074-4048-8076-7ac60eaf3a33channels4_profile.jpg",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "images/milestone/ab21acb5-f074-4048-8076-7ac60eaf3a33channels4_profile.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\milestone\\ab21acb5-f074-4048-8076-7ac60eaf3a33channels4_profile.jpg"
+    },
+    {
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\milestone\\dc9dc1cd-ea0b-4b24-8589-1a3d32548674channels4_profile.jpg",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "images/milestone/dc9dc1cd-ea0b-4b24-8589-1a3d32548674channels4_profile.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\milestone\\dc9dc1cd-ea0b-4b24-8589-1a3d32548674channels4_profile.jpg"
+    },
+    {
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\milestone\\ef721413-d5ea-4174-a193-0f99f1dff964channels4_profileas.png",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "images/milestone/ef721413-d5ea-4174-a193-0f99f1dff964channels4_profileas.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\milestone\\ef721413-d5ea-4174-a193-0f99f1dff964channels4_profileas.png"
+    },
+    {
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\post\\026d1ea0-d320-4d5f-9a87-0c0a00d8d927channels4_profileas.png",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "images/post/026d1ea0-d320-4d5f-9a87-0c0a00d8d927channels4_profileas.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\post\\026d1ea0-d320-4d5f-9a87-0c0a00d8d927channels4_profileas.png"
+    },
+    {
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\post\\a1d1b0e6-d3ca-4803-8182-3fa53b97081d20230608_193630.jpg",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "images/post/a1d1b0e6-d3ca-4803-8182-3fa53b97081d20230608_193630.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\post\\a1d1b0e6-d3ca-4803-8182-3fa53b97081d20230608_193630.jpg"
+    },
+    {
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\post\\ab592217-c299-4fe1-9bc8-8d514caef245c15d876519737754bfbe6fa92cb32e33.jpg",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
       "BasePath": "_content/WebApi",
       "RelativePath": "images/post/ab592217-c299-4fe1-9bc8-8d514caef245c15d876519737754bfbe6fa92cb32e33.jpg",
       "AssetKind": "All",
@@ -65,13 +235,47 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/post/ab592217-c299-4fe1-9bc8-8d514caef245c15d876519737754bfbe6fa92cb32e33.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\post\\ab592217-c299-4fe1-9bc8-8d514caef245c15d876519737754bfbe6fa92cb32e33.jpg"
     },
     {
-      "Identity": "/home/rmxburhan/Development/TO/WebApi/wwwroot/images/student/02393311-c107-4049-b33d-866cddc827627546465d40264e760086605adcaaec5f.jpg",
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\post\\b39b9839-b8ac-4a79-84f8-60dfdfb61020e2daf0e67b95a969dfae5315456cdf72.jpg",
       "SourceId": "WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/rmxburhan/Development/TO/WebApi/wwwroot/",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "images/post/b39b9839-b8ac-4a79-84f8-60dfdfb61020e2daf0e67b95a969dfae5315456cdf72.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\post\\b39b9839-b8ac-4a79-84f8-60dfdfb61020e2daf0e67b95a969dfae5315456cdf72.jpg"
+    },
+    {
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\post\\d03e8370-ba88-43b2-aba0-e0881d7b9323channels4_profile.png",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "images/post/d03e8370-ba88-43b2-aba0-e0881d7b9323channels4_profile.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\post\\d03e8370-ba88-43b2-aba0-e0881d7b9323channels4_profile.png"
+    },
+    {
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\student\\02393311-c107-4049-b33d-866cddc827627546465d40264e760086605adcaaec5f.jpg",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
       "BasePath": "_content/WebApi",
       "RelativePath": "images/student/02393311-c107-4049-b33d-866cddc827627546465d40264e760086605adcaaec5f.jpg",
       "AssetKind": "All",
@@ -82,13 +286,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/student/02393311-c107-4049-b33d-866cddc827627546465d40264e760086605adcaaec5f.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\student\\02393311-c107-4049-b33d-866cddc827627546465d40264e760086605adcaaec5f.jpg"
     },
     {
-      "Identity": "/home/rmxburhan/Development/TO/WebApi/wwwroot/images/student/0ec9e2f4-e97b-405e-92e4-4381fc773a53107332415_p1_master1200.jpg",
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\student\\0ec9e2f4-e97b-405e-92e4-4381fc773a53107332415_p1_master1200.jpg",
       "SourceId": "WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/rmxburhan/Development/TO/WebApi/wwwroot/",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
       "BasePath": "_content/WebApi",
       "RelativePath": "images/student/0ec9e2f4-e97b-405e-92e4-4381fc773a53107332415_p1_master1200.jpg",
       "AssetKind": "All",
@@ -99,13 +303,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/student/0ec9e2f4-e97b-405e-92e4-4381fc773a53107332415_p1_master1200.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\student\\0ec9e2f4-e97b-405e-92e4-4381fc773a53107332415_p1_master1200.jpg"
     },
     {
-      "Identity": "/home/rmxburhan/Development/TO/WebApi/wwwroot/images/student/1372c791-6880-4991-a4bb-5379680b41betest image.jpg",
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\student\\1372c791-6880-4991-a4bb-5379680b41betest image.jpg",
       "SourceId": "WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/rmxburhan/Development/TO/WebApi/wwwroot/",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
       "BasePath": "_content/WebApi",
       "RelativePath": "images/student/1372c791-6880-4991-a4bb-5379680b41betest image.jpg",
       "AssetKind": "All",
@@ -116,13 +320,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/student/1372c791-6880-4991-a4bb-5379680b41betest image.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\student\\1372c791-6880-4991-a4bb-5379680b41betest image.jpg"
     },
     {
-      "Identity": "/home/rmxburhan/Development/TO/WebApi/wwwroot/images/student/295563c9-d713-4a33-a99e-7d5faf26948d107332415_p1_master1200.jpg",
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\student\\295563c9-d713-4a33-a99e-7d5faf26948d107332415_p1_master1200.jpg",
       "SourceId": "WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/rmxburhan/Development/TO/WebApi/wwwroot/",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
       "BasePath": "_content/WebApi",
       "RelativePath": "images/student/295563c9-d713-4a33-a99e-7d5faf26948d107332415_p1_master1200.jpg",
       "AssetKind": "All",
@@ -133,13 +337,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/student/295563c9-d713-4a33-a99e-7d5faf26948d107332415_p1_master1200.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\student\\295563c9-d713-4a33-a99e-7d5faf26948d107332415_p1_master1200.jpg"
     },
     {
-      "Identity": "/home/rmxburhan/Development/TO/WebApi/wwwroot/images/student/2fdc1587-a4f2-4104-b92a-050ab5662f78test image.jpg",
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\student\\2fdc1587-a4f2-4104-b92a-050ab5662f78test image.jpg",
       "SourceId": "WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/rmxburhan/Development/TO/WebApi/wwwroot/",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
       "BasePath": "_content/WebApi",
       "RelativePath": "images/student/2fdc1587-a4f2-4104-b92a-050ab5662f78test image.jpg",
       "AssetKind": "All",
@@ -150,13 +354,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/student/2fdc1587-a4f2-4104-b92a-050ab5662f78test image.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\student\\2fdc1587-a4f2-4104-b92a-050ab5662f78test image.jpg"
     },
     {
-      "Identity": "/home/rmxburhan/Development/TO/WebApi/wwwroot/images/student/34c404f3-b17b-480e-8d72-9d5da4ddb9bc107332415_p1_master1200.jpg",
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\student\\34c404f3-b17b-480e-8d72-9d5da4ddb9bc107332415_p1_master1200.jpg",
       "SourceId": "WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/rmxburhan/Development/TO/WebApi/wwwroot/",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
       "BasePath": "_content/WebApi",
       "RelativePath": "images/student/34c404f3-b17b-480e-8d72-9d5da4ddb9bc107332415_p1_master1200.jpg",
       "AssetKind": "All",
@@ -167,13 +371,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/student/34c404f3-b17b-480e-8d72-9d5da4ddb9bc107332415_p1_master1200.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\student\\34c404f3-b17b-480e-8d72-9d5da4ddb9bc107332415_p1_master1200.jpg"
     },
     {
-      "Identity": "/home/rmxburhan/Development/TO/WebApi/wwwroot/images/student/4e954520-5ff5-463b-9d8f-73f52209bda7test image.jpg",
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\student\\4e954520-5ff5-463b-9d8f-73f52209bda7test image.jpg",
       "SourceId": "WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/rmxburhan/Development/TO/WebApi/wwwroot/",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
       "BasePath": "_content/WebApi",
       "RelativePath": "images/student/4e954520-5ff5-463b-9d8f-73f52209bda7test image.jpg",
       "AssetKind": "All",
@@ -184,13 +388,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/student/4e954520-5ff5-463b-9d8f-73f52209bda7test image.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\student\\4e954520-5ff5-463b-9d8f-73f52209bda7test image.jpg"
     },
     {
-      "Identity": "/home/rmxburhan/Development/TO/WebApi/wwwroot/images/student/5041bc83-c044-4f93-bbe5-8e3c4b957f15109112905_p0_master1200.jpg",
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\student\\5041bc83-c044-4f93-bbe5-8e3c4b957f15109112905_p0_master1200.jpg",
       "SourceId": "WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/rmxburhan/Development/TO/WebApi/wwwroot/",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
       "BasePath": "_content/WebApi",
       "RelativePath": "images/student/5041bc83-c044-4f93-bbe5-8e3c4b957f15109112905_p0_master1200.jpg",
       "AssetKind": "All",
@@ -201,13 +405,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/student/5041bc83-c044-4f93-bbe5-8e3c4b957f15109112905_p0_master1200.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\student\\5041bc83-c044-4f93-bbe5-8e3c4b957f15109112905_p0_master1200.jpg"
     },
     {
-      "Identity": "/home/rmxburhan/Development/TO/WebApi/wwwroot/images/student/542c91fd-fc0e-47f6-aafa-211e722ff321107332415_p1_master1200.jpg",
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\student\\542c91fd-fc0e-47f6-aafa-211e722ff321107332415_p1_master1200.jpg",
       "SourceId": "WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/rmxburhan/Development/TO/WebApi/wwwroot/",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
       "BasePath": "_content/WebApi",
       "RelativePath": "images/student/542c91fd-fc0e-47f6-aafa-211e722ff321107332415_p1_master1200.jpg",
       "AssetKind": "All",
@@ -218,13 +422,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/student/542c91fd-fc0e-47f6-aafa-211e722ff321107332415_p1_master1200.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\student\\542c91fd-fc0e-47f6-aafa-211e722ff321107332415_p1_master1200.jpg"
     },
     {
-      "Identity": "/home/rmxburhan/Development/TO/WebApi/wwwroot/images/student/67fa47d1-d8bb-4236-b3f5-8ccefaf96320istockphoto-915730090-170667a.webp",
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\student\\67fa47d1-d8bb-4236-b3f5-8ccefaf96320istockphoto-915730090-170667a.webp",
       "SourceId": "WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/rmxburhan/Development/TO/WebApi/wwwroot/",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
       "BasePath": "_content/WebApi",
       "RelativePath": "images/student/67fa47d1-d8bb-4236-b3f5-8ccefaf96320istockphoto-915730090-170667a.webp",
       "AssetKind": "All",
@@ -235,13 +439,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/student/67fa47d1-d8bb-4236-b3f5-8ccefaf96320istockphoto-915730090-170667a.webp"
+      "OriginalItemSpec": "wwwroot\\images\\student\\67fa47d1-d8bb-4236-b3f5-8ccefaf96320istockphoto-915730090-170667a.webp"
     },
     {
-      "Identity": "/home/rmxburhan/Development/TO/WebApi/wwwroot/images/student/7d3122dc-8151-4d91-ad0d-89b423a7b9b7istockphoto-915730090-170667a.webp",
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\student\\7d3122dc-8151-4d91-ad0d-89b423a7b9b7istockphoto-915730090-170667a.webp",
       "SourceId": "WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/rmxburhan/Development/TO/WebApi/wwwroot/",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
       "BasePath": "_content/WebApi",
       "RelativePath": "images/student/7d3122dc-8151-4d91-ad0d-89b423a7b9b7istockphoto-915730090-170667a.webp",
       "AssetKind": "All",
@@ -252,13 +456,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/student/7d3122dc-8151-4d91-ad0d-89b423a7b9b7istockphoto-915730090-170667a.webp"
+      "OriginalItemSpec": "wwwroot\\images\\student\\7d3122dc-8151-4d91-ad0d-89b423a7b9b7istockphoto-915730090-170667a.webp"
     },
     {
-      "Identity": "/home/rmxburhan/Development/TO/WebApi/wwwroot/images/student/8b98fab1-64a0-438f-a961-f90091328601E-7jVfcVkAM19RU.jpg",
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\student\\8b98fab1-64a0-438f-a961-f90091328601E-7jVfcVkAM19RU.jpg",
       "SourceId": "WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/rmxburhan/Development/TO/WebApi/wwwroot/",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
       "BasePath": "_content/WebApi",
       "RelativePath": "images/student/8b98fab1-64a0-438f-a961-f90091328601E-7jVfcVkAM19RU.jpg",
       "AssetKind": "All",
@@ -269,13 +473,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/student/8b98fab1-64a0-438f-a961-f90091328601E-7jVfcVkAM19RU.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\student\\8b98fab1-64a0-438f-a961-f90091328601E-7jVfcVkAM19RU.jpg"
     },
     {
-      "Identity": "/home/rmxburhan/Development/TO/WebApi/wwwroot/images/student/916fd220-c32f-47d6-a03e-40c13efe8a9d109112905_p0_master1200.jpg",
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\student\\916fd220-c32f-47d6-a03e-40c13efe8a9d109112905_p0_master1200.jpg",
       "SourceId": "WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/rmxburhan/Development/TO/WebApi/wwwroot/",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
       "BasePath": "_content/WebApi",
       "RelativePath": "images/student/916fd220-c32f-47d6-a03e-40c13efe8a9d109112905_p0_master1200.jpg",
       "AssetKind": "All",
@@ -286,13 +490,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/student/916fd220-c32f-47d6-a03e-40c13efe8a9d109112905_p0_master1200.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\student\\916fd220-c32f-47d6-a03e-40c13efe8a9d109112905_p0_master1200.jpg"
     },
     {
-      "Identity": "/home/rmxburhan/Development/TO/WebApi/wwwroot/images/student/a0be8ba5-404d-4243-818b-20f70fe86d687546465d40264e760086605adcaaec5f.jpg",
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\student\\a0be8ba5-404d-4243-818b-20f70fe86d687546465d40264e760086605adcaaec5f.jpg",
       "SourceId": "WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/rmxburhan/Development/TO/WebApi/wwwroot/",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
       "BasePath": "_content/WebApi",
       "RelativePath": "images/student/a0be8ba5-404d-4243-818b-20f70fe86d687546465d40264e760086605adcaaec5f.jpg",
       "AssetKind": "All",
@@ -303,13 +507,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/student/a0be8ba5-404d-4243-818b-20f70fe86d687546465d40264e760086605adcaaec5f.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\student\\a0be8ba5-404d-4243-818b-20f70fe86d687546465d40264e760086605adcaaec5f.jpg"
     },
     {
-      "Identity": "/home/rmxburhan/Development/TO/WebApi/wwwroot/images/student/ae77939a-4a67-44b8-9ba6-6f7cff7616aa107332415_p1_master1200.jpg",
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\student\\ae77939a-4a67-44b8-9ba6-6f7cff7616aa107332415_p1_master1200.jpg",
       "SourceId": "WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/rmxburhan/Development/TO/WebApi/wwwroot/",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
       "BasePath": "_content/WebApi",
       "RelativePath": "images/student/ae77939a-4a67-44b8-9ba6-6f7cff7616aa107332415_p1_master1200.jpg",
       "AssetKind": "All",
@@ -320,13 +524,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/student/ae77939a-4a67-44b8-9ba6-6f7cff7616aa107332415_p1_master1200.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\student\\ae77939a-4a67-44b8-9ba6-6f7cff7616aa107332415_p1_master1200.jpg"
     },
     {
-      "Identity": "/home/rmxburhan/Development/TO/WebApi/wwwroot/images/student/edce8a93-c25f-476f-9f1f-793b6bd51efc107332415_p1_master1200.jpg",
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\student\\edce8a93-c25f-476f-9f1f-793b6bd51efc107332415_p1_master1200.jpg",
       "SourceId": "WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/rmxburhan/Development/TO/WebApi/wwwroot/",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
       "BasePath": "_content/WebApi",
       "RelativePath": "images/student/edce8a93-c25f-476f-9f1f-793b6bd51efc107332415_p1_master1200.jpg",
       "AssetKind": "All",
@@ -337,13 +541,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/student/edce8a93-c25f-476f-9f1f-793b6bd51efc107332415_p1_master1200.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\student\\edce8a93-c25f-476f-9f1f-793b6bd51efc107332415_p1_master1200.jpg"
     },
     {
-      "Identity": "/home/rmxburhan/Development/TO/WebApi/wwwroot/images/teacher/92bc5d17-f9da-4668-8a29-c4d8cbbd9578test image.jpg",
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\teacher\\92bc5d17-f9da-4668-8a29-c4d8cbbd9578test image.jpg",
       "SourceId": "WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/rmxburhan/Development/TO/WebApi/wwwroot/",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
       "BasePath": "_content/WebApi",
       "RelativePath": "images/teacher/92bc5d17-f9da-4668-8a29-c4d8cbbd9578test image.jpg",
       "AssetKind": "All",
@@ -354,13 +558,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/teacher/92bc5d17-f9da-4668-8a29-c4d8cbbd9578test image.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\teacher\\92bc5d17-f9da-4668-8a29-c4d8cbbd9578test image.jpg"
     },
     {
-      "Identity": "/home/rmxburhan/Development/TO/WebApi/wwwroot/images/teacher/a15360c3-438d-4761-b877-b86d7bdee0ad97fd53579ce0b0d035fc41770577e1e2.jpg",
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\teacher\\a15360c3-438d-4761-b877-b86d7bdee0ad97fd53579ce0b0d035fc41770577e1e2.jpg",
       "SourceId": "WebApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/rmxburhan/Development/TO/WebApi/wwwroot/",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
       "BasePath": "_content/WebApi",
       "RelativePath": "images/teacher/a15360c3-438d-4761-b877-b86d7bdee0ad97fd53579ce0b0d035fc41770577e1e2.jpg",
       "AssetKind": "All",
@@ -371,7 +575,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/teacher/a15360c3-438d-4761-b877-b86d7bdee0ad97fd53579ce0b0d035fc41770577e1e2.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\teacher\\a15360c3-438d-4761-b877-b86d7bdee0ad97fd53579ce0b0d035fc41770577e1e2.jpg"
+    },
+    {
+      "Identity": "D:\\anoara\\WebApi\\wwwroot\\images\\teacher\\df8a5442-dd06-414e-89a7-2544e0665998e2daf0e67b95a969dfae5315456cdf72.jpg",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\anoara\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "images/teacher/df8a5442-dd06-414e-89a7-2544e0665998e2daf0e67b95a969dfae5315456cdf72.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\teacher\\df8a5442-dd06-414e-89a7-2544e0665998e2daf0e67b95a969dfae5315456cdf72.jpg"
     }
   ]
 }

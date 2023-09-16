@@ -5,6 +5,7 @@ public class Class
     public string Topic { get; set; }
     public Guid TeacherId { get; set; }
     public virtual Teacher Teacher { get; set; }
+    public List<Attendance> Attendances { get; set; } = new();
     public DateTime Time { get; set; }
     public DateTime CreatedAt { get; set; }
     public DateTime? UpdatedAt { get; set; }

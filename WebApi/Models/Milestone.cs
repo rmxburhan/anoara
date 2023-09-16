@@ -6,7 +6,6 @@ public class Milestone
     public string Title { get; set; }
     public string Description { get; set; }
     public string Image { get; set; } = string.Empty;
-    public List<Student> Students { get; set; } = new();
     public DateTime CreatedAt { get; set; }
     public DateTime? UpdatedAt { get; set; }
     public DateTime? DeletedAt { get; set; }

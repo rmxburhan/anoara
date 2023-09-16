@@ -29,11 +29,7 @@ public class MilestoneController : ControllerBase
     public async Task<IActionResult> GetMilestones([FromQuery] FilterMilestone filters)
     {
         var milestones = dataContext.Milestones.Where(x => x.DeletedAt == null);
-        if (filters.StudentId.HasValue)
-            milestones = milestones.Include(x => x.Students.Where(x => x.Id == filters.StudentId));
-        else
-            milestones = milestones.Include(x => x.Students);
-
+       
         var result = await milestones.ToListAsync();
         return Ok(new
         {
@@ -97,7 +93,7 @@ public class MilestoneController : ControllerBase
     }
 
     [Authorize(Roles = "Admin,Teacher"), HttpPut("{id:guid}")]
-    public async Task<IActionResult> UpdateMilestone(UpdateMilestoneRequest request, Guid id)
+    public async Task<IActionResult> UpdateMilestone([FromForm] UpdateMilestoneRequest request, Guid id)
     {
         var milestone = await dataContext.Milestones.FirstOrDefaultAsync(x => x.Id == id && x.DeletedAt == null);
 
@@ -127,24 +123,6 @@ public class MilestoneController : ControllerBase
         });
     }
 
-    /// <summary>
-    /// This nedpoint is for add or attahc milestone to a student
-    /// this endpoint protected for teacher and admin only
-    /// </summary>
-    /// <returns></returns>
-    [Authorize(Roles = "Teacher,Admin"), HttpPost("/add/student")]
-    public async Task<IActionResult> AddMilestoneToStudent(AddMilestoneToStudent request)
-    {
-        var milestone = await dataContext.Milestones.FirstOrDefaultAsync(x => x.Id == request.MilestoneId);
-
-        foreach (var item in request.Students)
-        {
-            var student = await dataContext.Students.FirstOrDefaultAsync(x => x.Id == item);
-            milestone.Students.Add(student);
-        }
-        dataContext.Milestones.Update(milestone);
-        await dataContext.SaveChangesAsync();
-        return Ok(milestone);
-    }
+ 
 
 }

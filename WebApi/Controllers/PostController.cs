@@ -80,7 +80,7 @@ public class PostController : ControllerBase
         {
             var filename = Guid.NewGuid().ToString() + request.Banner.FileName;
             request.Banner.CopyTo(new FileStream(Path.Combine(uploadPath.PostImage(), filename), FileMode.Create));
-            post.Banner = filename;
+            post.Banner = Path.Combine("images","post",filename);
         }
 
         dataContext.Posts.Add(post);
@@ -137,7 +137,6 @@ public class PostController : ControllerBase
 
         if (post == null)
             return NotFound();
-
 
         post.DeletedAt = DateTime.Now;
         dataContext.Posts.Update(post);

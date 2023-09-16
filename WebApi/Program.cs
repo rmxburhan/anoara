@@ -15,7 +15,7 @@ builder.Services.AddSingleton<IPasswordHasher, PasswordHasher>();
 builder.Services.AddSingleton<IUploadPath, UploadPath>();
 builder.Services.AddDbContext<ApiDataContext>(options =>
 {
-    options.UseMySQL(builder.Configuration.GetConnectionString("MySql"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer"));
 });
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

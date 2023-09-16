@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using WebApi.dto.Attendance;
 using WebApi.Models;
 
@@ -16,27 +17,31 @@ public class AttendanceController : ControllerBase
         this.dataContext = dataContext;
     }
 
-    [Authorize(Roles = "Teacher"), HttpPost]
+    [Authorize, HttpPost("add")]
     public async Task<IActionResult> AddAttendances(AddAttendanceRequest request)
     {
-        List<Attendance> datas = new List<Attendance>();
-
+        var Class = await dataContext.Classes.FirstOrDefaultAsync(x => x.DeletedAt == null && x.Id == request.ClassId);
+        if (Class == null)
+            return NotFound();
+        
         foreach (var item in request.Students)
         {
-            datas.Add(new Attendance
+            var data = new Attendance
             {
                 Date = DateTime.Now,
                 StudentId = item,
                 ClassId = request.ClassId,
                 CreatedAt = DateTime.Now
-            });
+            };
+            dataContext.Attendances.Add(data);
+            Class.Attendances.Add(data);
         }
-
-        await dataContext.Attendances.AddRangeAsync(datas);
+        dataContext.Classes.Update(Class);
+        await dataContext.SaveChangesAsync();
         return Ok(new
         {
             message = "Add attendance success",
-            data = datas
+            data = Class
         });
     }
 }

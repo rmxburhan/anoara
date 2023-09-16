@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/home/rmxburhan/Development/TO/WebApi/WebApi.csproj": {}
+    "D:\\anoara\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "/home/rmxburhan/Development/TO/WebApi/WebApi.csproj": {
+    "D:\\anoara\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/rmxburhan/Development/TO/WebApi/WebApi.csproj",
+        "projectUniqueName": "D:\\anoara\\WebApi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "/home/rmxburhan/Development/TO/WebApi/WebApi.csproj",
-        "packagesPath": "/home/rmxburhan/.nuget/packages/",
-        "outputPath": "/home/rmxburhan/Development/TO/WebApi/obj/",
+        "projectPath": "D:\\anoara\\WebApi\\WebApi.csproj",
+        "packagesPath": "C:\\Users\\rizal\\.nuget\\packages\\",
+        "outputPath": "D:\\anoara\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/rmxburhan/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\rizal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -57,6 +63,10 @@
               "version": "[7.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.11, )"
             },
@@ -102,7 +112,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/rmxburhan/Software/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -12,6 +12,8 @@ using WebApi.Common;
 using WebApi.dto.auth;
 using WebApi.dto.Student;
 using WebApi.Models;
+using Microsoft.Identity.Client;
+using WebApi.dto.Milestone;
 
 namespace WebApi.Controllers;
 
@@ -30,6 +32,17 @@ public class StudentController : ControllerBase
         this.uploadPath = uploadPath;
     }
 
+    [Authorize(Roles = "Admin,Teacher"), HttpGet]
+    public async Task<IActionResult> GetStudents()
+    {
+        var student = await dataContext.Students.Where(x => x.DeletedAt == null).ToListAsync();
+           
+        return Ok(new
+        {
+            message = "Succes to get data student",
+            data = student
+        });
+    }
 
     [Authorize(Roles = "Student"), HttpGet("me")]
     public async Task<IActionResult> GetMyProfile()
@@ -37,7 +50,7 @@ public class StudentController : ControllerBase
         ClaimsPrincipal claims = HttpContext.User;
         var user_id = claims.FindFirstValue(ClaimTypes.NameIdentifier);
         var roles = claims.FindFirstValue(ClaimTypes.Role);
-        var profile = await dataContext.Students.FirstOrDefaultAsync(x => x.Id == Guid.Parse(user_id) && x.DeletedAt == null);
+        var profile = await dataContext.Students.Include(x => x.Attendances).FirstOrDefaultAsync(x => x.Id == Guid.Parse(user_id) && x.DeletedAt == null);
         if (profile == null)
             return Unauthorized();
 
@@ -121,14 +134,16 @@ public class StudentController : ControllerBase
     [Authorize, HttpGet("{id:guid}")]
     public async Task<IActionResult> GetStudent(Guid id)
     {
-        var student = await dataContext.Students.FirstOrDefaultAsync(x => x.Id == id && x.DeletedAt == null);
+        var student = await dataContext.Students.Include(x => x.Milestones).Include(x => x.Attendances).FirstOrDefaultAsync(x => x.Id == id && x.DeletedAt == null);
         if (student == null)
             return NotFound();
-
-
-        return Ok(student);
+        student.AttendanceCuont = student.Attendances.Count;
+        return Ok(new
+        {
+            message = "Get student success",
+            data = student
+        });
     }
-
 
     /// <summary>
     /// Update a test passed count for student
@@ -139,7 +154,7 @@ public class StudentController : ControllerBase
     /// <param name="id"></param>
     /// <returns></returns>
     /// This endpoint is for teacher only
-    [Authorize(Roles = "Student"), HttpPut("test/{id:guid}")]
+    [Authorize(Roles = "Teacher, Admin"), HttpPut("test/{id:guid}")]
     public async Task<IActionResult> UpdateStudentTess(UpdateStudentTestPassedRequest request, Guid id)
     {
         var student = await dataContext.Students.FirstOrDefaultAsync(x => x.Id == id && x.DeletedAt == null);
@@ -149,7 +164,28 @@ public class StudentController : ControllerBase
         student.TestPassed += request.TestPassedCount;
         student.UpdatedAt = DateTime.Now;
         dataContext.Students.Update(student);
+        await dataContext.SaveChangesAsync();
         return Ok(student);
+    }
+
+    /// <summary>
+    /// This nedpoint is for add or attahc milestone to a student
+    /// this endpoint protected for teacher and admin only
+    /// </summary>
+    /// <returns></returns>
+    [Authorize(Roles = "Teacher,Admin"), HttpPost("add/milestone")]
+    public async Task<IActionResult> AddMilestoneToStudent(AddMilestoneToStudent request)
+    {
+        var milestone = await dataContext.Students.FirstOrDefaultAsync(x => x.Id == request.StudentId);
+
+        foreach (var item in request.Milestones)
+        {
+            var student = await dataContext.Milestones.FirstOrDefaultAsync(x => x.Id == item);
+            milestone.Milestones.Add(student);
+        }
+        dataContext.Students.Update(milestone);
+        await dataContext.SaveChangesAsync();
+        return Ok(milestone);
     }
 }
 

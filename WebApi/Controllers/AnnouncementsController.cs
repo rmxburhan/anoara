@@ -27,7 +27,7 @@ public class AnnouncementsController : ControllerBase
     [Authorize, HttpGet]
     public async Task<IActionResult> GetAnnouncements()
     {
-        var announcements = await dataContext.Announcements.Include(x => x.Teacher).ToListAsync();
+        var announcements = await dataContext.Announcements.Include(x => x.Teacher).Where(x => x.DeletedAt == null).ToListAsync();
 
         return Ok(new
         {
@@ -113,11 +113,7 @@ public class AnnouncementsController : ControllerBase
         dataContext.Announcements.Update(announcement);
         await dataContext.SaveChangesAsync();
 
-        return Ok(new
-        {
-            messagae = "Announcement has been deleted",
-            data = announcement
-        });
+        return NoContent();
     }
 
     [Authorize(Roles = "Student"), HttpPost("{id:guid}/comment")]
