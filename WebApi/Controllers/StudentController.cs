@@ -36,7 +36,7 @@ public class StudentController : ControllerBase
     public async Task<IActionResult> GetStudents()
     {
         var student = await dataContext.Students.Where(x => x.DeletedAt == null).ToListAsync();
-           
+
         return Ok(new
         {
             message = "Succes to get data student",
@@ -50,9 +50,11 @@ public class StudentController : ControllerBase
         ClaimsPrincipal claims = HttpContext.User;
         var user_id = claims.FindFirstValue(ClaimTypes.NameIdentifier);
         var roles = claims.FindFirstValue(ClaimTypes.Role);
-        var profile = await dataContext.Students.Include(x => x.Attendances).FirstOrDefaultAsync(x => x.Id == Guid.Parse(user_id) && x.DeletedAt == null);
+        var profile = await dataContext.Students.Include(x => x.Attendances).Include(x => x.Milestones).FirstOrDefaultAsync(x => x.Id == Guid.Parse(user_id) && x.DeletedAt == null);
         if (profile == null)
             return Unauthorized();
+
+        profile.AttendanceCuont = profile.Attendances.Count;
 
         return Ok(new
         {
@@ -186,6 +188,42 @@ public class StudentController : ControllerBase
         dataContext.Students.Update(milestone);
         await dataContext.SaveChangesAsync();
         return Ok(milestone);
+    }
+
+    [Authorize(Roles = "Student"), HttpGet("myclass")]
+    public async Task<IActionResult> GetMyClass()
+    {
+        ClaimsPrincipal claims = HttpContext.User;
+        var student_id = claims.FindFirstValue(ClaimTypes.NameIdentifier);
+        var student = await dataContext.Students.FirstOrDefaultAsync(x => x.Id == Guid.Parse(student_id));
+        if (student == null)
+            return Unauthorized();
+
+        var today = DateTime.Now.Date.AddDays(3);
+
+        var data = await dataContext.Classes
+           .Where(entity => entity.Time >= today && entity.Time < today.AddDays(7))
+           .ToListAsync();
+
+        // Perform grouping in memory
+        var groupedData = data.GroupBy(entity => entity.Time.DayOfWeek)
+            .OrderBy(groupedData => groupedData.Key)
+            .ToDictionary(groupedData => groupedData.Key, groupedData => groupedData.ToList());
+
+        // Ensure there are empty lists for all days of the week
+        for (DayOfWeek day = DayOfWeek.Sunday; day <= DayOfWeek.Saturday; day++)
+        {
+            if (!groupedData.ContainsKey(day))
+            {
+                groupedData.Add(day, new List<Class>());
+            }
+        }
+
+        return Ok(new
+        {
+            message = "Get class succes",
+            data = groupedData
+        });
     }
 }
 

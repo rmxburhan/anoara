@@ -1,3 +1,4 @@
+using System.IO;
 using System.Net;
 using System.Security.AccessControl;
 using System.Data;
@@ -29,7 +30,7 @@ public class MilestoneController : ControllerBase
     public async Task<IActionResult> GetMilestones([FromQuery] FilterMilestone filters)
     {
         var milestones = dataContext.Milestones.Where(x => x.DeletedAt == null);
-       
+
         var result = await milestones.ToListAsync();
         return Ok(new
         {
@@ -67,7 +68,7 @@ public class MilestoneController : ControllerBase
             if (!Directory.Exists(uploadPath.MilestonePath()))
                 Directory.CreateDirectory(uploadPath.MilestonePath());
             request.Image.CopyTo(new FileStream(Path.Combine(uploadPath.MilestonePath(), fileName), FileMode.Create));
-            milestone.Image = fileName;
+            milestone.Image = Path.Combine("images", "milestone", fileName);
         }
         dataContext.Milestones.Add(milestone);
         await dataContext.SaveChangesAsync();
@@ -110,7 +111,7 @@ public class MilestoneController : ControllerBase
             if (!Directory.Exists(uploadPath.MilestonePath()))
                 Directory.CreateDirectory(uploadPath.MilestonePath());
             request.Image.CopyTo(new FileStream(Path.Combine(uploadPath.MilestonePath(), fileName), FileMode.Create));
-            milestone.Image = fileName;
+            milestone.Image = Path.Combine("images", "milestone", fileName);
         }
         milestone.UpdatedAt = DateTime.Now;
         dataContext.Milestones.Update(milestone);
@@ -123,6 +124,6 @@ public class MilestoneController : ControllerBase
         });
     }
 
- 
+
 
 }
