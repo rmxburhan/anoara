@@ -23,9 +23,14 @@ public class AttendanceController : ControllerBase
         var Class = await dataContext.Classes.FirstOrDefaultAsync(x => x.DeletedAt == null && x.Id == request.ClassId);
         if (Class == null)
             return NotFound();
-        
+
+
         foreach (var item in request.Students)
         {
+            var attendanceExist = await dataContext.Attendances.FirstOrDefaultAsync(x => x.ClassId == Class.Id && x.StudentId == item);
+            if (attendanceExist != null)
+                continue;
+
             var data = new Attendance
             {
                 Date = DateTime.Now,

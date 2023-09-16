@@ -14,6 +14,7 @@ using WebApi.dto.Student;
 using WebApi.Models;
 using Microsoft.Identity.Client;
 using WebApi.dto.Milestone;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace WebApi.Controllers;
 
@@ -86,7 +87,7 @@ public class StudentController : ControllerBase
             if (!profile.BannerPicture.IsNullOrEmpty())
                 if (System.IO.File.Exists(Path.Combine(uploadPath.StudentPhoto(), profile.BannerPicture)))
                     System.IO.File.Delete(Path.Combine(uploadPath.StudentPhoto(), profile.BannerPicture));
-            profile.BannerPicture = Path.Combine("images/student", fileName);
+            profile.BannerPicture = Path.Combine("images","student", fileName);
         }
         if (request.ProfilePicture != null)
         {
@@ -97,7 +98,7 @@ public class StudentController : ControllerBase
             if (!profile.ProfilePicture.IsNullOrEmpty())
                 if (System.IO.File.Exists(Path.Combine(uploadPath.StudentPhoto(), profile.ProfilePicture)))
                     System.IO.File.Delete(Path.Combine(uploadPath.StudentPhoto(), profile.ProfilePicture));
-            profile.ProfilePicture = Path.Combine("images/student", fileName);
+            profile.ProfilePicture = Path.Combine("images","student", fileName);
         }
 
         profile.UpdatedAt = DateTime.Now;
@@ -124,6 +125,23 @@ public class StudentController : ControllerBase
             Password = passwordHasher.HashPassword(request.Password),
             CreatedAt = DateTime.Now
         };
+
+        if (request.BannerPicture != null)
+        {
+            if (!Directory.Exists(uploadPath.StudentPhoto()))
+                Directory.CreateDirectory(uploadPath.StudentPhoto());
+            var fileName = Guid.NewGuid().ToString() + request.BannerPicture.FileName;
+            request.BannerPicture.CopyTo(new FileStream(Path.Combine(uploadPath.StudentPhoto(), fileName), FileMode.Create));
+            data.BannerPicture = Path.Combine("images","student", fileName);
+        }
+        if (request.ProfilePicture != null)
+        {
+            if (!Directory.Exists(uploadPath.StudentPhoto()))
+                Directory.CreateDirectory(uploadPath.StudentPhoto());
+            var fileName = Guid.NewGuid().ToString() + request.ProfilePicture.FileName;
+            request.ProfilePicture.CopyTo(new FileStream(Path.Combine(uploadPath.StudentPhoto(), fileName), FileMode.Create));
+            data.ProfilePicture = Path.Combine("images","student", fileName);
+        }
 
         dataContext.Students.Add(data);
         await dataContext.SaveChangesAsync();
