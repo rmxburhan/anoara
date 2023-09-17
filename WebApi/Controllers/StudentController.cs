@@ -87,7 +87,7 @@ public class StudentController : ControllerBase
             if (!profile.BannerPicture.IsNullOrEmpty())
                 if (System.IO.File.Exists(Path.Combine(uploadPath.StudentPhoto(), profile.BannerPicture)))
                     System.IO.File.Delete(Path.Combine(uploadPath.StudentPhoto(), profile.BannerPicture));
-            profile.BannerPicture = Path.Combine("images","student", fileName);
+            profile.BannerPicture = Path.Combine("images", "student", fileName);
         }
         if (request.ProfilePicture != null)
         {
@@ -98,7 +98,7 @@ public class StudentController : ControllerBase
             if (!profile.ProfilePicture.IsNullOrEmpty())
                 if (System.IO.File.Exists(Path.Combine(uploadPath.StudentPhoto(), profile.ProfilePicture)))
                     System.IO.File.Delete(Path.Combine(uploadPath.StudentPhoto(), profile.ProfilePicture));
-            profile.ProfilePicture = Path.Combine("images","student", fileName);
+            profile.ProfilePicture = Path.Combine("images", "student", fileName);
         }
 
         profile.UpdatedAt = DateTime.Now;
@@ -132,7 +132,7 @@ public class StudentController : ControllerBase
                 Directory.CreateDirectory(uploadPath.StudentPhoto());
             var fileName = Guid.NewGuid().ToString() + request.BannerPicture.FileName;
             request.BannerPicture.CopyTo(new FileStream(Path.Combine(uploadPath.StudentPhoto(), fileName), FileMode.Create));
-            data.BannerPicture = Path.Combine("images","student", fileName);
+            data.BannerPicture = Path.Combine("images", "student", fileName);
         }
         if (request.ProfilePicture != null)
         {
@@ -140,7 +140,7 @@ public class StudentController : ControllerBase
                 Directory.CreateDirectory(uploadPath.StudentPhoto());
             var fileName = Guid.NewGuid().ToString() + request.ProfilePicture.FileName;
             request.ProfilePicture.CopyTo(new FileStream(Path.Combine(uploadPath.StudentPhoto(), fileName), FileMode.Create));
-            data.ProfilePicture = Path.Combine("images","student", fileName);
+            data.ProfilePicture = Path.Combine("images", "student", fileName);
         }
 
         dataContext.Students.Add(data);
@@ -217,10 +217,10 @@ public class StudentController : ControllerBase
         if (student == null)
             return Unauthorized();
 
-        var today = DateTime.Now.Date.AddDays(3);
+        var today = DateTime.Now.Date;
 
         var data = await dataContext.Classes
-           .Where(entity => entity.Time >= today && entity.Time < today.AddDays(7))
+           .Include(x => x.Teacher).Where(entity => entity.Time >= today && entity.Time < today.AddDays(7))
            .ToListAsync();
 
         // Perform grouping in memory
