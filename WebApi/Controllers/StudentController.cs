@@ -15,6 +15,7 @@ using WebApi.Models;
 using Microsoft.Identity.Client;
 using WebApi.dto.Milestone;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Reflection.Metadata.Ecma335;
 
 namespace WebApi.Controllers;
 
@@ -54,9 +55,7 @@ public class StudentController : ControllerBase
         var profile = await dataContext.Students.Include(x => x.Attendances).Include(x => x.Milestones).FirstOrDefaultAsync(x => x.Id == Guid.Parse(user_id) && x.DeletedAt == null);
         if (profile == null)
             return Unauthorized();
-
-        profile.AttendanceCuont = profile.Attendances.Count;
-
+        profile.AttendanceCuont = profile.Attendances.Count();
         return Ok(new
         {
             message = "Get profile success",
@@ -220,7 +219,7 @@ public class StudentController : ControllerBase
         var today = DateTime.Now.Date;
 
         var data = await dataContext.Classes
-           .Include(x => x.Teacher).Where(entity => entity.Time >= today && entity.Time < today.AddDays(7))
+           .Include(x => x.Teacher).Where(entity => entity.Time >= today && entity.Time < today.AddDays(7) && entity.DeletedAt == null)
            .ToListAsync();
 
         // Perform grouping in memory
